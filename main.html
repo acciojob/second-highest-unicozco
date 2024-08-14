@@ -9,8 +9,21 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
+			//Write your code her
+			let big = -Infinity  , sbig = -infinity
+			fotr(let t of arr){
 			
+
+			if (t>big){
+				sbig=big
+				big=t
+			}
+				if else (t>sbig && t!=big){
+					sbig=t
+				}
+			}
+			return sbig
+
 		}
 
 		function Main() {
@@ -20,6 +33,7 @@
 				arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
+		
 		}
 		Main();
 	</script>
